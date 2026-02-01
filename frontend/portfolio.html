@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shwetha I Desai | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+
+<div class="page">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <span class="logo">Shwetha Desai</span>
+    <div class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hi, I am <span>Shwetha I Desai</span></h1>
+      <h2>B.Tech Student – Information Science & Engineering</h2>
+      <p>
+        Information Science Engineering student with a strong interest in
+        software engineering and web application development.
+        Hands-on experience in Java, Python, Flask, REST APIs, and databases.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#" class="btn primary">Download Resume</a>
+        <a href="#projects" class="btn secondary">View Projects</a>
+      </div>
+    </div>
+
+    <div class="hero-img">
+      <img
+        src="images/profile-pic.jpg"
+        alt="Shwetha Desai"
+      />
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <p>📞 +91 9008205335</p>
+    <p>📧 desaishwetha6@gmail.com</p>
+    <p>
+      🔗 
+      <a href="https://www.linkedin.com/in/shwetha-desai-370a70259" target="_blank" rel="noopener noreferrer">
+        LinkedIn
+      </a>
+      |
+      <a href="https://github.com/shwetha8882" target="_blank" rel="noopener noreferrer">
+        GitHub
+      </a>
+    </p>
+    
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <h3>Skills</h3>
+    <ul class="skills">
+      <li>Python, Java, JavaScript, C</li>
+      <li>HTML, CSS</li>
+      <li>Flask, REST APIs, MVC Architecture</li>
+      <li>MySQL, JDBC, SQL Queries</li>
+      <li>Machine Learning, Pandas, NumPy</li>
+      <li>Git, GitHub, VS Code, Jupyter</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <h3>Projects</h3>
+
+    <div class="project">
+      <h4>Hotel Management System – Home Retreat</h4>
+      <p>
+        Project |Java, MySQL, NetBeans IDE GitHub 
+<br> Built a full-stack hotel management system with modules for Admin Login, Staff Handling, Booking, 
+and Check-In/Check-Out. 
+<br> Integrated MySQL through JDBC for real-time and consistent data operations. 
+<br> Automated repetitive admin tasks, improving operational efficiency. 
+<br> Designed centralized workflows to enhance coordination between departments.
+      </p>
+    </div>
+
+    <div class="project">
+      <h4>AI vs Real Image Detection System</h4>
+      <p>
+        Project | Python, Deep Learning, Flask, Hugging Face, OpenCV 
+        <br> Developed an AI-based image authenticity detection system to classify images as real or 
+AI-generated using a hybrid CNN + Vision Transformer (ViT) model. 
+<br> Implemented image preprocessing techniques such as resizing, normalization, and texture 
+analysis using OpenCV and NumPy to improve model performance. 
+<br> Built an interactive frontend using Hugging Face Spaces (Gradio UI) for seamless image 
+upload and real-time result visualization with confidence scores.
+      </p>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section">
+    <h3>Education</h3>
+    <p><strong>B.Tech – Information Science</strong><br>
+      M.S Ramaiah University of Applied Sciences (2022–2026)<br>
+      CGPA: 8.25
+    </p>
+    <p>12th (PCMB): 94.6% | 10th: 87.2%</p>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section">
+    <h3>Certifications</h3>
+    <ul>
+      <li>Generative AI for Software Development – IBM</li>
+      <li>Data Science for Engineers – NPTEL</li>
+      <li>Ethical Hacking – NPTEL</li>
+      <li>Python 101 for Data Science – IBM</li>
+    </ul>
+  </section>
+
+</div>
+
+<script>
+  document.getElementById("userEmail").innerText =
+    localStorage.getItem("email");
+
+  function logout() {
+    localStorage.clear();
+    window.location.href = "index.html";
+  }
+</script>
+
+</body>
+</html>
